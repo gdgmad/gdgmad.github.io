@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>MADMeetup</title>
+		<meta name="author" content="Faiz Malkani" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		<!--script src="//tympanus.net/codrops/adpacks/analytics.js"></script-->
+	</head>
+	<body class="loading">
+		<svg class="hidden">
+			<symbol id="icon-dot" viewBox="0 0 24 24">
+				<title>dot</title>
+				<path d="M11.5 9c-.69 0-1.28.244-1.768.732A2.41 2.41 0 0 0 9 11.5c0 .69.244 1.28.732 1.767A2.409 2.409 0 0 0 11.5 14c.69 0 1.28-.244 1.768-.733A2.408 2.408 0 0 0 14 11.5c0-.69-.244-1.28-.732-1.768A2.408 2.408 0 0 0 11.5 9z"/>
+			</symbol>
+			<symbol id="icon-cross" viewBox="0 0 24 24">
+				<title>cross</title>
+				<path d="M11.449 11.962l-5.1 5.099a.363.363 0 1 0 .513.512L12 12.436l5.137 5.137a.361.361 0 0 0 .513 0 .363.363 0 0 0 0-.512l-5.099-5.1 5.102-5.102a.363.363 0 1 0-.512-.513L12 11.487l-5.141-5.14a.363.363 0 0 0-.513.512l5.103 5.103z"/>
+			</symbol>
+			<symbol id="icon-close" viewBox="0 0 24 24">
+				<title>close</title>
+				<path d="M21 4.565L19.435 3 12 10.435 4.565 3 3 4.565 10.435 12 3 19.435 4.565 21 12 13.565 19.435 21 21 19.435 13.565 12z"/>
+			</symbol>
+			<symbol id="icon-grid" viewBox="0 0 24 24">
+				<title>grid</title>
+				<path d="M8.982 8.982h5.988v5.988H8.982zM0 0h5.988v5.988H0zM8.982 17.965h5.988v5.988H8.982zM0 8.982h5.988v5.988H0zM0 17.965h5.988v5.988H0zM17.965 0h5.988v5.988h-5.988zM8.982 0h5.988v5.988H8.982zM17.965 8.982h5.988v5.988h-5.988zM17.965 17.965h5.988v5.988h-5.988z"/>
+			</symbol>
+		</svg>
+		<main>
+			<div class="sections">
+				<header class="sections__header">
+					<h1 class="title"><img src="img/logo.png"></h1>
+				</header>
+				<nav class="menu">
+					<div class="menu__toggle">
+						<span class="menu__toggle-inner menu__toggle-inner--open">
+						</span>
+						<span class="menu__toggle-inner menu__toggle-inner--close">
+							<svg class="icon icon--close"><use xlink:href="#icon-close"></use></svg>
+						</span>
+					</div>
+				</nav>
+				<div class="details">
+					<div class="details__toggle">
+						<span class="details__toggle-inner details__toggle-inner--more">
+							<svg class="icon icon--dot"><use xlink:href="#icon-dot"></use></svg>
+							<span class="details__toggle-text">See more details</span>
+						</span>
+						<span class="details__toggle-inner details__toggle-inner--less">
+							<svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg>
+							<span class="details__toggle-text">See less details</span>
+						</span>
+					</div>
+					<button class="button-contentclose">
+						<svg class="icon icon--close"><use xlink:href="#icon-close"></use></svg>
+					</button>
+				</div>
+				<nav class="sections__nav">
+					<button class="sections__nav-item sections__nav-item--prev">
+					</button>
+					<button class="sections__nav-item sections__nav-item--next">
+					</button>
+				</nav>
+				<section class="section section--current">
+					<div class="section__content">
+						<h2 class="section__title">Hello</h2>
+						<p class="section__description"><span class="section__description-inner">Mumbai App Developers is a monthly meetup in Mumbai, that aims to bring the developer community together to learn, teach, discuss, share, and most importantly, form lasting connections.
+						<br>We're one big, welcoming bunch, all backgrounds, genders, skill levels and outlooks invited. <br>Talk to us at <a class="content__email" href="mailto:madmeetup.mail@gmail.com">hello@madmeetup.com</a> or <a target="_blank" class="content__email" href="https://join.slack.com/t/madmeetup/shared_invite/enQtMzMwNTYwNDM3OTM3LWFlMWUxNGZmNmNkM2RiMmVkYzZhZTU0MTZmYWIyMDllMjUwYWJjNjg3ZGZjY2ZiZTExNDBhYmVmZGZkNWE0ODg">join our Slack!</a></span></p>
+						<br><br>
+						<a target="_blank" id="event.registration-link">
+							<button class="content__register">Register for the next meetup!</button>
+						</a>
+					</div>
+					<div class="section__img">
+						<div class="section__img-inner" style="background-image: url(img/cover.jpg)"></div>
+					</div>
+					<div class="section__expander"></div>
+					<ul class="section__details">
+						<li class="section__details-item">
+							<h3 class="section__details-title">Next Meetup</h3>
+							<span class="section__details-detail" id="event.date"></span>
+						</li>
+						<li class="section__details-item">
+							<h3 class="section__details-title">Venue</h3>
+							<span class="section__details-detail" id="event.venue"></span>
+						</li>
+						<li class="section__details-item">
+							<h3 class="section__details-title">Timing</h3>
+							<span class="section__details-detail" id="event.time"></span>
+						</li>
+						<li class="section__details-item section__details-item--clickable" data-gallery="gallery1">
+							<div class="section__details-img">
+								<img src="img/thumb1.jpg" alt="Image Gallery"/>
+								<svg class="icon icon--grid"><use xlink:href="#icon-grid"></use></svg>
+							</div>
+							<h3 class="section__details-title">Gallery</h3>
+							<span class="section__details-detail">A collection of photos<br>from past meetups</span>
+						</li>
+					</ul>
+					<div class="section__gallery" id="gallery1">
+						<h3 class="section__gallery-item section__gallery-item--title">Gallery</h3>
+						<a class="section__gallery-item" href="#"><img src="img/thumb1.jpg" alt="January 2017"/></a>
+						<a class="section__gallery-item" href="#"><img src="img/thumb2.jpg" alt="November 2016"/></a>
+						<a class="section__gallery-item" href="#"><img src="img/thumb3.jpg" alt="October 2017"/></a>
+						<a class="section__gallery-item" href="#"><img src="img/thumb4.jpg" alt="February 2017"/></a>
+						<a class="section__gallery-item" href="#"><img src="img/thumb5.jpg" alt="January 2017"/></a>
+						<a class="section__gallery-item" href="#"><img src="img/thumb6.jpg" alt="April 2017"/></a>
+					</div>
+				</section>
+			</div>
+		</main>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/charming.min.js"></script>
+		<script src="js/anime.min.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-database.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/data.js"></script>
+	</body>
+</html>
